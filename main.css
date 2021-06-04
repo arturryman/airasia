@@ -234,14 +234,14 @@ background: #F5170E;
     vertical-align: top;
     width: 490px;
     height: 505px;
-    background: url(./img/gates.png) center center / cover no-repeat;
+    background: url(img/gates.png) center center / cover no-repeat;
 }
 .about {
     color: black;
     border-radius: 5px;
 }
 .about__desc {
-    background: url(./img/mountains.png);
+    background: url(img/mountains.png);
     display: inline-block;
     vertical-align: top;
     width: 785px;
