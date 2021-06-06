@@ -1,7 +1,6 @@
 body {
     font-family:'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
-    letter-spacing: 0.1em;
     background-color: #001821;
 }
 
@@ -15,7 +14,6 @@ h1,h2,h3,h4,h5,h6{
 }
 p {
     margin: 0;
-    padding: 0 0 30px 0;
 }
 
 .container {
@@ -25,7 +23,7 @@ p {
 }
 .header.header.container{
     position: relative;
-    padding: 0 0 58px 0;
+    padding: 40px 0 40px 0;
 }
 .logo, .menu, .contacts {
     width: 33.3%;
@@ -36,15 +34,14 @@ p {
     vertical-align: middle; 
     width: 85px;
     height: 36px;
-    padding: 29px 79px 0 0 ;
+    margin-right: 79px;
+    
 
 }
 
 .menu {
     display: inline-block;
     vertical-align: middle;
-    text-align: center;
-    padding: 42px 0 0 0 ;
 
 }
 
@@ -53,13 +50,12 @@ p {
     display: inline-block;
     vertical-align: middle;
     text-align: right;
-    padding: 26px 0 0 0;
-    position: absolute;
 }
 
 .menu__list{
     display: inline-block;
 }
+
 .menu__title {
     font-size: 14px;
     line-height: 19px;
@@ -67,6 +63,7 @@ p {
     text-decoration: none;
     margin-right: 50px;
 }
+
 .menu__title:hover {
     color: #DA0100
     ;
@@ -89,9 +86,10 @@ p {
 .headline__text {
     font-weight: bold;
     font-size: 72px;
+
     line-height: 98px;
     width: 550px;
-    margin-bottom: 18px;
+    margin-bottom: 28px;
 }
 .headline__slogan {
     font-family: Open Sans;
@@ -100,11 +98,11 @@ p {
     font-size: 18px;
     line-height: 20px;
     align-items: center;
-    padding: 27.5px 0px 33px 0px;
+    margin-bottom: 33px;
 }
 .headline {
     color: #ffffff;
-    padding: 130px 0 230px;
+    padding: 50px 0 230px;
 }
 .button {
     padding: 18px 40px;
@@ -142,13 +140,24 @@ background: #F5170E;
     color: #FFFFFF;
     padding: 49px 0px 51px;
 }
+.main-content__text::after {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 26px;
+    background-image: url(img/flame.png);
+    margin-left: 12px;
+}
 .offer-item {
     display: inline-block;
     vertical-align: top;
     width: 362px;
     background-color: #ffffff;
     border-radius: 5px 5px 5px 5px;
-    margin-right: 14px;
+    margin-right: 15px;
+}
+.offer-item:last-child {
+    margin-right: 0;
 }
 .offer-item__desc {
     padding: 30px;
@@ -156,7 +165,7 @@ background: #F5170E;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 22px;
 }
 .offer-item__conditions-item {
     display: inline-block;
@@ -165,12 +174,15 @@ background: #F5170E;
 }
 .offer-item__icon {
     display: inline-block;
+    margin-right: 10px;
 }
 .offer-item__text {
     display: inline-block;
     margin-bottom: 25px;
     line-height: 21px;
+    margin-right: 28px;
 }
+
 .offer-item__subtitle {
     margin: 25px 0 20px 0px;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
@@ -178,6 +190,7 @@ background: #F5170E;
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
+    margin-top: 0px;
 }
 .news {
     color: #FFFFFF;
@@ -194,7 +207,12 @@ h2 {
     vertical-align: top;
     position: relative;
     border-radius: 5px;
-    overflow: hidden;
+    margin-right: 25px;
+    margin-bottom: 55px;
+
+}
+.news-item:last-child{
+    margin-right: 0px;
 }
 .news__text--content {
     position: absolute;
@@ -219,15 +237,13 @@ h2 {
     font-size: 16px;
     line-height: 21px;
 }
-.news {
-    margin-bottom: 55px;
-}
 
 .paginator {
+    padding: 0 0 153px 0;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
     text-align: center;
     color: #FFFFFF
-    
+        
 }
 .paginator__display, .paginator__list {
     display: inline-block;
@@ -257,7 +273,7 @@ h2 {
     font-weight: bold;
     color: #FFFFFF;
     line-height: 21px;
-    font-size: 16px;
+    font-size: 16px;        
 
 
 }
@@ -273,6 +289,9 @@ h2 {
     color: black;
     border-radius: 5px;
     padding: 0 0 55px 0;
+}
+p { 
+    margin-bottom: 43px;
 }
 .about__desc {
     background: url(img/mountains.png);
@@ -307,18 +326,22 @@ h2 {
 .footer .container{
     position: relative;
     display: inline-block;
-    padding: 55px 0;
+    
+}
+.footer {
+    padding: 55px 0 58px 0;
+    vertical-align: bottom;
 }
 .contacts__call {
     color: #9A9A9A;
     display: block;
-    vertical-align: middle;
 }
 .socials {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
+}
+.socials__item--icon {
     text-decoration: none;
-    position: absolute;
 }
 .main-page-wrapper {
     background: url(img/1.png) center top no-repeat, url(img/2.png) center bottom no-repeat;
