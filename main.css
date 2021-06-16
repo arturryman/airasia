@@ -115,7 +115,6 @@ img {
 .headline__text {
     font-weight: bold;
     font-size: 72px;
-
     line-height: 98px;
     width: 550px;
     margin-bottom: 28px;
@@ -161,7 +160,7 @@ img {
     border: 1px solid #F5170E;
 }
 
-. .button_watch {
+.button_watch {
     border: 1px solid #F5170E;
     box-sizing: border-box;
     border-radius: 35px;
@@ -487,7 +486,7 @@ p {
     min-height: 420px;
     display: flex;
     flex-direction: column;
-    background: url(/img/Services/headline\ 1.png) center top no-repeat
+    background: url(./img/Services/headline\ 1.png) center top no-repeat
 }
 
 
