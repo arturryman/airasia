@@ -671,7 +671,7 @@ p {
 
 .container-background {
     
-    background: url(/img/Start/bg.png) no-repeat;  
+    background: url(./img/Start/bg.png) no-repeat;  
     min-height: 960px;
     display: flex;
     align-items: center;
