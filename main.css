@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
+    height: 100%;
 
 }
 
@@ -58,7 +59,6 @@ img {
 
 .logo {
     display: block;
-    /* vertical-align: middle;  */
     width: 85px;
     height: 36px;
     margin-right: 79px;
@@ -153,6 +153,23 @@ img {
 .button__details {
     background: #F5170E;
 }
+
+.button__clear {
+    background: #8E8E8E;
+    border: none;
+}
+
+.button__clear:hover {
+    cursor: pointer;
+    background: #2B2B2B;
+}
+
+.button__send {
+    background: #F5170E;
+    border: none;
+    cursor: pointer;
+}
+
 
 .button__details--service:hover {
     background: #FFFFFF;
@@ -420,10 +437,10 @@ p {
 }
 
 .footer {
-    /* position: relative;  */
     padding: 55px 0 58px 0;
     vertical-align: bottom;
     border-top: 4px solid hsla(0, 0%, 100%, 0.10);
+    
 
 }
 
@@ -461,6 +478,11 @@ p {
     text-decoration: none;
     display: inline-flex;
     margin-right: 10px;
+    opacity: 70%;
+}
+
+.socials__item--icon:hover {
+    opacity: 100%;
 }
 
 .socials__item--icon:last-child {
@@ -734,3 +756,186 @@ p {
     font-weight: bold;
 }
 
+
+
+
+
+/* ОТЗЫВЫ */
+
+
+.reviews {
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 76px;
+}
+
+.review {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    background: #F4F5F5;
+
+}
+
+.review__item {
+    margin-bottom: 20px;
+}
+
+.review__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review__user {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #2E77A4;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review__user::after {
+    content: url(./img/Reviews/vk-blue\ 1.png);
+    height: 30px;
+
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.review__tag {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tag {
+    font-size: 13px;
+    color: #303030;
+    padding: 9px 18px;
+    border-radius: 50px;
+    background: #E7E7E7;
+}
+
+.tag--bg--green {
+    background: #B9EAE4;
+}
+
+.review__title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1A1B1E;
+}
+
+.review__content--text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: #818181;
+}
+
+.review__date {
+    color: #1A1B1E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.separator {
+    background: url(./img/Reviews/couple.png) no-repeat  1000px, url(./img/Reviews/Rectangle.png) center no-repeat;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.seporator__content {
+    max-width: 53%;
+}
+
+.seporator__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    
+}
+
+
+.form__row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.form__controls {
+    display: flex;
+}
+
+.form__controls--title {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.controls {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.controls__item {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.form__input {
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 4px;
+    border: none;
+    background: #FFFFFF;
+    padding: 30px 22px;
+    font-size: 18px;
+    color: #1A1B1E;
+
+}
+
+.form__input::placeholder {
+    color: #666;
+}
+
+.form__input:last-child {
+    margin-right: 0px;
+}
+
+.form__input--texteria {
+    height: 235px;
+}
+
+.controls__elem {
+    cursor: pointer;
+}
+
+.controls__checkbox:checked ~ .controls__tag {
+    background: #B9EAE4;
+}
+
+.controls__checkbox {
+    display: none;
+}
+
+.form__btn {
+    margin-right: 17px;
+}
+
+.form__btn:last-child {
+    margin-right: 0;
+}
+
+.form__button {
+    display: flex;
+    justify-content: flex-end;
+}
