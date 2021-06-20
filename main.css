@@ -42,7 +42,6 @@ img {
 }
 
 .header {
-    position: relative;
     padding: 40px 0 40px 0;
     display: flex;
     justify-content: space-between;
@@ -53,9 +52,6 @@ img {
     align-items: center;
 }
 
-.header__col--align--right {
-    justify-content: flex-end;
-}
 
 .logo {
     display: block;
@@ -133,6 +129,7 @@ img {
 .headline {
     color: #ffffff;
     margin-bottom: 246px;
+    margin-top: 80px;
 }
 
 .button {
@@ -221,12 +218,10 @@ img {
 }
 
 .offer-item {
-    /* display: inline-block; */
     vertical-align: top;
     width: calc(100% / 3 - 17px);
     background-color: #ffffff;
     border-radius: 5px 5px 5px 5px;
-    /* margin-right: 15px; */
 }
 
 .offer-item:last-child {
@@ -285,8 +280,6 @@ img {
 
 .news-item {
     width: 550px;
-    display: flex;
-    /* vertical-align: top; */
     position: relative;
     border-radius: 5px;
     margin-right: 25px;
@@ -377,12 +370,10 @@ img {
 
 .about::before {
     content: "";
+    position: absolute;
     display: block;
-    /* display: inline-block;
-    vertical-align: top; */
     width: 490px;
     height: 505px;
-    /* position: absolute; */
     left: 0px;
     top: 0px;
     background: url(img/gates.png) center center / cover no-repeat;
@@ -392,9 +383,10 @@ img {
     color: black;
     border-radius: 5px;
     padding: 0 0 55px 0;
-    text-align: right;
-    /* position: relative; */
     display: flex;
+    position: relative;
+    justify-content: flex-end;
+
 }
 
 p {
@@ -403,14 +395,10 @@ p {
 
 .about__desc {
     background: url(img/mountains.png);
-    display: inline-block;
-    vertical-align: top;
     max-width: 785px;
     min-height: 455px;
-    margin-left: -141px;
     margin-top: 95px;
     position: relative;
-    text-align: left;
     padding: 70px 202px 37px 81px;
     box-sizing: border-box;
 
@@ -643,7 +631,6 @@ p {
     height: 60px;
     justify-content: center;
     filter: grayscale(100%);
-    margin-bottom: 88px;
 }
 
 .partners__link:hover {
@@ -653,6 +640,8 @@ p {
 .partners__item {
     display: flex;
     align-items: center;
+    margin-bottom: 88px;
+
 
 
 }
