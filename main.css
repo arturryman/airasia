@@ -323,22 +323,20 @@ img {
     color: #FFFFFF;
 }
 
-.paginator__display,
-.paginator__list {
+.paginator__display, .paginator__list {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
 }
 
 .paginator__display {
     margin-right: 26px;
-
 }
 
 .paginator__item {
     display: flex;
     align-items: center;
     text-align: center;
+    vertical-align: middle;
 }
 
 .paginator__item--active .paginator__link {
@@ -356,16 +354,14 @@ img {
 
 .paginator__link {
     display: block;
-    width: 21px;
-    height: 21px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     text-decoration: none;
     font-weight: bold;
     color: #FFFFFF;
-    line-height: 21px;
     font-size: 16px;
-
-
+    line-height: 32px;
 }
 
 .about::before {
